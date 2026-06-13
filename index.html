@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelSphere</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">TravelSphere</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#book">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active"><img src="./images.1/1000351820.jpg" class="d-block w-100" alt="Island view"></div>
+      <div class="carousel-item"><img src="./images.1/1000351821.jpg" class="d-block w-100" alt="Beach view"></div>
+      <div class="carousel-item"><img src="./images.1/1000351822.jpg" class="d-block w-100" alt="Sunset view"></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+  </div>
+
+  <section class="py-5" id="destinations">
+    <div class="container">
+      <h2 class="text-center mb-4">Popular Destinations</h2>
+      <div class="row g-4">
+        <article class="col-md-4"><div class="card h-100"><img src="./images.1/miami.jpg" class="card-img-top" alt="Miami"><div class="card-body text-center"><h5 class="card-title">Miami</h5></div></div></article>
+        <article class="col-md-4"><div class="card h-100"><img src="./images.1/havana.jpg" class="card-img-top" alt="Havana"><div class="card-body text-center"><h5 class="card-title">Havana</h5></div></div></article>
+        <article class="col-md-4"><div class="card h-100"><img src="./images.1/key west.jpeg" class="card-img-top" alt="Key West"><div class="card-body text-center"><h5 class="card-title">Key West</h5></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light" id="book">
+    <div class="text-center container">
+      <h2 class="mb-3">Book Your Trip</h2>
+      <p class="mb-4">Choose a relaxing getaway with easy booking and great deals.</p>
+      <a href="https://www.booking.com/" class="btn btn-primary btn-lg">Book Now</a>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Quick Booking Form</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form class="p-4 rounded shadow-sm bg-white">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" />
+            </div>
+            <div class="mb-3">
+              <label for="destination" class="form-label">Destination</label>
+              <select class="form-select" id="destination">
+                <option selected>Choose a destination</option>
+                <option>Miami</option>
+                <option>Havana</option>
+                <option>Key West</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="date" class="form-label">Travel Date</label>
+              <input type="date" class="form-control" id="date" />
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Travel Essentials</h2>
+      <div class="row g-4">
+        <article class="col-md-4"><div class="card h-100"><div class="card-body"><h5 class="card-title">Packing Tips</h5><p><strong>Clothing:</strong> Light fabrics</p><p><strong>Documents:</strong> Valid passport</p></div></div></article>
+        <article class="col-md-4"><div class="card h-100"><div class="card-body"><h5 class="card-title">Best Time to Visit</h5><p><strong>Miami:</strong> Dec–Apr</p><p><strong>Havana:</strong> Nov–Apr</p></div></div></article>
+        <article class="col-md-4"><div class="card h-100"><div class="card-body"><h5 class="card-title">Local Cuisine</h5><p><strong>Miami:</strong> Cuban sandwiches</p><p><strong>Havana:</strong> Ropa Vieja</p></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center p-3">
+    <p class="mb-1">© TravelSphere</p>
+    <a href="#">Made by _B.MAGGIE</a>
+    <a href="#">Privacy Policy</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
